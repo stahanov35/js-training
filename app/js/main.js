@@ -3,10 +3,10 @@
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
-    let i = 7,
-      str = '';
+    let i = 7;
+    let str = '';
 
-    while(i--){
+    while (i--) {
       str += '#';
       console.log(str);
     }
