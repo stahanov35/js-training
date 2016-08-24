@@ -3,23 +3,42 @@
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
-    for (let i = 1; i <= 100; i++) {
-      let remainderDiv3 = i % 3;
-      let remainderDiv5 = i % 5;
-
-      if (!remainderDiv3 && !remainderDiv5) {
-        console.log('FizzBuZZ');
+    let toValue = 7;
+    let count = Math.ceil(toValue / 8);
+    console.log(count);
+    let i = toValue % 8;
+    let j = 1;
+    console.log(i);
+    do {
+      switch (i) {
+        case 1:
+          i++;
+          console.log(i + j);
+        case 2:
+          i++;
+          console.log(i + j);
+        case 3:
+          i++;
+          console.log(i + j);
+        case 4:
+          i++;
+          console.log(i + j);
+        case 5:
+          i++;
+          console.log(i + j);
+        case 6:
+          i++;
+          console.log(i + j);
+        case 7:
+          i++;
+          console.log(i + j);
+        case 8:
+          i++;
+          console.log(i + j);
+        default: i = 1;
       }
-      if (!remainderDiv3) {
-        console.log('Fizz');
-        continue;
-      }
-      if (!remainderDiv5) {
-        console.log('Buzz');
-        continue;
-      }
-      console.log(i);
-    }
+      j++;
+    } while (j <= count + 1);
   }
 };
 }());
