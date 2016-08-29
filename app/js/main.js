@@ -3,13 +3,18 @@
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
-    let boardSize = 8;
+    let boardSize = +prompt('Please enter board Size');
     let boardRowFirst = '';
     let boardRowSecond = '';
     let result = '';
 
+    // Validation of board size value
+    if (!boardSize) {
+      return console.log('Enter correct intenger number!');
+    }
+
     // Create templates for rows
-    for (let i = boardSize; i; i -= 2) {
+    for (let i = boardSize; i > 0; i -= 2) {
       boardRowFirst += ' #';
       boardRowSecond += '# ';
     }
