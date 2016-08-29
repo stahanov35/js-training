@@ -1,4 +1,4 @@
-# js-training
+# Js training
 
 - Chapter 1. Types, operators
   - ch1.triangle
